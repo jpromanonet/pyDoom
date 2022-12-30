@@ -40,7 +40,7 @@ class Player:
             self.angle -= PLAYER_ROT_SPEED * self.game.delta_time
         if keys[pg.K_RIGHT]:
             self.angle += PLAYER_ROT_SPEED * self.game.delta_time
-        self.angle %= math.tau
+        self.angle %= math.tau # tau = 2 * pi
 
     def update(self):
         self.movement()
