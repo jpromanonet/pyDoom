@@ -4,7 +4,7 @@ import pygame as pg
 import sys
 from settings import *
 from map import *
-
+from player import *
 
 class Game:
     def __init__(self):
@@ -16,6 +16,7 @@ class Game:
 
     def new_game(self):
         self.map = Map(self)
+        self.player = Player(self)
 
     def update(self):
         pg.display.flip()
