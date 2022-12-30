@@ -20,11 +20,16 @@ class Player:
 
         # Let's capture the key strokes
         keys = pg.key.get_pressed()
-        if keys[pg.K_s]:
+        if keys[pg.K_w]:
             dx += speed_cos
             dy += speed_sin
+        if keys[pg.K_s]:
+            dx += -speed_cos
+            dy += -speed_sin
         if keys[pg.K_a]:
-            dx =
+            dx += speed_sin
+            dy += -speed_cos
+        if key
 
     def update(self):
         self.movement()
