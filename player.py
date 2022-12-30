@@ -16,9 +16,15 @@ class Player:
         dx, dy = 0, 0
         speed = PLAYER_SPEED * self.game.delta_time
         speed_sin = speed * sin_a
-        spedd_cos = speed * cos_a
+        speed_cos = speed * cos_a
 
         # Let's capture the key strokes
+        keys = pg.key.get_pressed()
+        if keys[pg.K_s]:
+            dx += speed_cos
+            dy += speed_sin
+        if keys[pg.K_a]:
+            dx =
 
     def update(self):
         self.movement()
