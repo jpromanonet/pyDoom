@@ -4,6 +4,7 @@ import pygame as pg
 import sys
 from settings import *
 
+
 class Game:
     def __init__(self):
         pg.init()
@@ -32,6 +33,7 @@ class Game:
             self.check_events()
             self.update()
             self.draw()
+
 
 if __name__ == '__main__':
     game = Game()
