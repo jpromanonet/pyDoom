@@ -29,7 +29,9 @@ class Player:
         if keys[pg.K_a]:
             dx += speed_sin
             dy += -speed_cos
-        if key
+        if keys[pg.K_d]:
+            dx += -speed_sin
+            dy += speed_cos
 
     def update(self):
         self.movement()
