@@ -55,6 +55,6 @@ class Player:
     def __pos__(self):
         return self.x, self.y
 
-    @@property
+    @property
     def map_os(self):
         return int(self.x), int(self.y)
